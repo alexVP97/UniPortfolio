@@ -1,5 +1,0 @@
-Açó es el que hem conseguit fer fins ara, vaig estar la major part de la sessió amb el problema del 
-sticky i de com fer per a que el menú es quedara flotant per damunt però no vaig ser capaç de resoldre'l.
-Adjunte els enllaços de html i css:
-https://mural.uv.es/avepei/ProM/inicio.html
-https://mural.uv.es/avepei/ProM/menu.css
