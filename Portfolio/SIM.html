@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Portfolio: Simulación</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='SIM.css'>
+    <script src='funciones.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Portfolio de Simulación</h1>
+            <h2>Introducción</h2>
+            <p>
+                En la asignatura de simulación (tercer curso de Ingeniería Multimedia) aprendimos a la reproducción de sistemas
+                con físicas utilizando diferentes modelos teóricos. <br>Empezamos la primera parte de la asignatura aprendiendo
+                los distintos métodos de integración para poder realizar los cálculos con eficiencia. Seguidmente, estudiamos
+                los sistemas de partículas para poder representar tanto emisores como cualquier escenario con colisones de partículas.
+                Finalmente, aprendimos a usar los modelos basados en masas y muelles para simular sólidos deformables.
+
+                <br><br>
+                Este portfolio se ha realizado con la librería de p5.js para los ejercicios más simples (Processing mediante JavaScript)
+                y con capturas de pantalla para aquellos scripts con las estructuras más complejas que requieren de varios archivos y clases.
+            </p>
+        </div>
+        <div id="menu">
+            <div id="t1" onclick="scrollToTop('tema1')" class="cuadro" onmouseover="resaltarG('t1')" onmouseleave="apagar('t1')">
+                <img src="Logo/Gif1.gif" alt="">
+                Tema 1: <br> Integradores
+            </div>
+            <div id="t2" onclick="scrollToTop('tema2')" class="cuadro" onmouseover="resaltarG('t2')" onmouseleave="apagar('t2')">
+                <img src="Logo/gif2.gif" alt="">
+                Tema 2: <br> Partículas
+            </div>
+            <div id="t3" onclick="scrollToTop('tema3')" class="cuadro" onmouseover="resaltarG('t3')" onmouseleave="apagar('t3')">
+                <img src="Logo/gif3.gif" alt="">
+                Tema 3: <br> Mallas
+            </div>
+        </div>
+        <div id="tema1">
+            <h2>Ejercicios del Tema 1:</h2>
+            <p>Se trata de ejercicios simples para familiarizarnos con el uso de processing y de los integradores.</p>
+            <br>
+            <h2>Ejercicios de Clase</h2>
+            <div id="cnv1t1">
+                <br><br>
+                <h3>Ejercicio 1: Montaña Rusa</h3>
+                <p>
+                    Ejercicio muy simple con el que se buscaba enseñarnos a manejar las variables de posición velocidad y aceleración en Processing.
+                </p>
+                <div id="ej1t1" class="ejercicio"></div>
+                <script src="ejerciciosT1/ej1MontRusa.js"></script>
+            </div>
+            <div id="cnv2t1">
+                <h3>Ejercicio 2: Movimiento circular uniforme</h3>
+                <p>
+                    Ejercio sobre el manejo de las variables angulares.
+                </p>
+                <div id="ej2t1" class="ejercicio"></div>
+                <script src="ejerciciosT1/ej2circulo.js"></script>
+            </div>
+        </div>
+        <div id="tema2">
+            <h2>Ejercicios del Tema 2:</h2>
+            <p>Se trata de ejercicios simples para familiarizarnos con el uso de processing y de los integradores.</p>
+        </div>
+        <div id="tema3">
+            <h2>Ejercicios del Tema 3:</h2>
+            <p>Se trata de ejercicios simples para familiarizarnos con el uso de processing y de los integradores.</p>
+        </div>
+    </main>
+</body>
+</html>

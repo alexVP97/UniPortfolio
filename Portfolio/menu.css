@@ -1,0 +1,432 @@
+@font-face {
+    font-family: "ArchitectsDaughter";
+    src: url("fuentes/architects-daughter/ArchitectsDaughter.ttf");
+    font-style: normal;
+}
+body{
+    font-family: "ArchitectsDaughter";
+}
+/*Para escritorio-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 700px) {
+
+    @keyframes resaltar {
+        0%  {background-color: rgb(27, 5, 128);}
+        25%  {background-color: white;}
+        50% {background-color: rgb(27, 5, 128)}
+        75%  {background-color: white;}
+        100% {background-color: rgb(27, 5, 128)}
+      }
+    #mppal{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.469);
+        color: white;
+        /*position: sticky;*/
+        position: fixed;
+        top: 0;
+        width: fit-content;
+        padding: 10px;
+        z-index: 1;
+    
+    }
+    #mppal > a:hover{
+        background-color:rgba(255, 255, 255, 0.714);
+    }
+    #mppal > h1{text-align: center;}
+    #secdesp{display: none;}
+    #cerrar{display: none;
+        max-width: 15px;
+        max-height: 15px;
+        transform: rotateZ(-90deg);
+        align-self: center;
+    }
+    #secdesp > a:hover{
+        text-shadow: 0px 1px white;
+    }
+    
+    #logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        max-width: 150px;
+        max-height: 150px;
+    }
+    
+    body{
+        background-color: rgb(231, 149, 90);
+        margin: 0;
+    }
+
+    #mesa{
+        z-index: -1;
+        position: absolute;
+        background-image: url('Logo/Wood048_2K_Color.jpg');
+        width: 1900px;
+        height: 1600px;
+    }
+    #mesa > div{
+        position: absolute;
+        z-index: 0;
+    }
+    div.seccion > img{
+        display: none;
+    }
+    #hoja{
+        border: 2px solid gray;
+        height: 1050px;
+        width: 735px;
+        top: 450px;
+        left: 550px;
+        background-image: url('Logo/folio2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #contenedorSim{
+        position: absolute;
+        left: 60px;
+        top: 200px;
+        border: 3px dashed gray;
+    }
+    #escrito{
+        position: absolute;
+        left: 50px;
+        top: 820px;
+        text-align: center;
+    }
+    #SIM{
+        display: none;
+        position: absolute;
+        top: 375px;
+        left: 560px;
+        color: white;
+        text-shadow: 0px 1px white;
+
+    }
+    #fcontacto{
+        display: none;
+        border: 2px solid gray;
+        height: 1050px;
+        width: 735px;
+        top: 450px;
+        left: 525px;
+        transform: rotateZ(-5deg);
+        background-color: beige;
+        z-index: 1;
+        padding: 20px;
+    }
+    #teclado{
+        border-top: none;
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        width: 1200px;
+        height: 300px;
+        top: 0px;
+        left: 400px;
+        border-radius: 0px 0px 30px 30px;
+        background-image: url('Logo/typing.gif');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #ANI{
+        display: none;
+        position: absolute;
+        top: 300px;
+        left: 410px;
+        color: white;
+        text-shadow: 0px 1px white;
+    }
+
+    #alfombrilla{
+        border: 2px solid black;
+        background-image: url('Logo/product-section-02-1-1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-right: none;
+        width: 500px;
+        height: 450px;
+        border-radius: 30px 0px 0px 30px;
+        top: 400px;
+        right: 0px;
+    }
+    #raton{
+        position: absolute;
+        left: 200px;
+        top: 80px;
+        height: 270px;
+        width: 150px;
+        border: 2px solid #d3d3d3;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(136, 135, 135) 0%, rgb(211, 210, 210) 100%);
+        border-radius: 90px 90px 60px 60px;
+        transform: rotateZ(7deg);
+
+    }
+    #lvert{
+        position: absolute;
+        left: 60px;
+        height: 100px;
+        width: 10px;
+        border-right: 5px solid black;
+        background-color: none;
+    }
+    #PEA{
+        display: none;
+        position: absolute;
+        top: 860px;
+        right: 260px;
+        color: white;
+        text-shadow: 0px 1px white;
+
+    }
+
+    #alex{
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        border-radius: 30px;
+        bottom: 20px;
+        left: 20px;
+        transform: rotateZ(-5deg);
+        transition: transform 1s linear;
+    }
+    #alex:hover{
+        z-index: 1;
+        transform: translateX(100%) translateY(-40%) scale(1.75, 1.75);
+        box-shadow: grey;
+    }
+    
+    #pablo{
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        border-radius: 30px;
+        bottom: 100px;
+        right: 20px;
+        transform: rotateZ(-80deg);
+        transition: transform 1s linear;
+    }
+    #pablo:hover{
+        z-index: 1;
+        transform: translateX(-80%) translateY(-40%) scale(1.75, 1.75);
+        box-shadow: grey;
+    }
+    div.carnet{
+        padding: 8px;
+        background-color: rgb(27, 5, 128);
+        color: rgba(255, 255, 255, 0.938);
+    }
+
+    div.carnet > img.foto{
+        height: 125px;
+        width: 100px;
+        border: 2px solid white;
+        border-radius: 5px;
+        float: left;
+        margin-right: 3px;
+    }
+    div.carnet > img.etse{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        height: 60px;
+        width: 170px;
+
+    }
+    div.carnet > p{
+        padding-top: 10px;
+        font-family: Calibri;
+        font-size: 10pt;
+        text-align: justify;
+        font-weight: lighter;
+    }
+    div.carnet > p > span{
+        font-family: 'Franklin Gothic Medium';
+        font-size: 10.5pt;
+        margin-bottom: 5px;
+    }
+    div.celo{
+        display: none;
+    }
+    #pie{
+        background-color: rgba(0, 0, 0, 0.591);
+        color: white;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+    #msj{
+        position: absolute;
+        right: 100px;
+        top: 900px;
+    }
+    #msjMvl{display: none;}
+    #msjPC{
+        position: absolute;
+        font-size: 9pt;
+        top: 60px;
+        left: 35px;
+        width: 80%;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        font-size: xx-large;
+        color: rgb(23, 64, 245);
+        font-weight: 100;
+    }
+    #escrito{color: rgb(23, 64, 245);}
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    /*A partir de aquí diseño para móvil*******************************************************************************************************************/
+    body{
+        display: flex;
+        flex-direction: column;
+        background-image: url('Logo/folio.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h2{display: block;
+        text-decoration: underline;
+    }
+    body > div{
+        width: 100%;
+        margin: 10px;
+    }
+    #mppal{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    #mppal > a{
+        font-size: large;
+    }
+    #mppal > p{
+        display: block;
+        font-size: larger;
+    }
+
+    #logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        max-width: 350px;
+        max-height: 350px;
+    }
+    #mppal >a:hover{
+        background-color: rgba(250, 10, 10, 0.557);
+    }
+    #secdesp{display: none;}
+    #cerrar{display: block;
+        max-width: 20px;
+        max-height: 20px;
+        transform: rotateZ(90deg);
+        align-self: center;
+        background-color: black;
+    }
+    #secdesp > a:hover{
+        text-shadow: 0px 1px rgba(250, 10, 10, 0.557);
+    }
+
+    div.seccion{
+        width: 100%;
+        margin: 10px 0px;
+        border: 3px solid black;
+        border-radius: 20px;
+        overflow: clip;
+        padding: 0px;
+        background-color: black;
+
+    }
+    div.seccion > img{
+        width: 100%;
+        height: 100%;
+        transform: translateY(5px);
+    }
+    #fcontacto{
+        border: 3px dashed black;
+        padding: 5px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    input{
+        border: 2px dashed black;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-family: "ArchitectsDaughter";
+        color: rgb(46, 55, 226);
+        margin-bottom: 5px;
+        padding: none;
+        width: 75%;
+    }
+    #cuerpocorreo{width: 100%;}
+    .etse{display: none;}
+
+    div.carnet > img.foto{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        border: 5px solid black;
+    }
+    div.celo{
+        position: relative;
+        top: -50px;
+        left: 40%;
+        width: 150px;
+        height: 50px;
+        background-color: rgba(184, 240, 240, 0.571);
+        box-shadow: 0px -5px 10px inset rgba(128, 128, 128, 0.796);
+    }
+    span{
+        font-weight: bold;
+    }
+    div.carnet{
+        background-image: url('Logo/yellow-texture-template-slides.jpg');
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        box-shadow: 0px 0px 5px black;
+        margin-bottom: 60px;
+
+    }
+    #pie{
+        background-color: rgba(0, 0, 0, 0.591);
+        color: white;
+        
+    }
+    #msj{
+        position: relative;
+        left: 20px;
+        width: fit-content;
+    }
+    #msjPC{display: none;}
+    #msjMvl{
+        position: absolute;
+        font-size: 9pt;
+        top: 60px;
+        left:50px;
+        width: 70%;
+        text-align: center;
+    }
+    #escrito{display: none;}
+    h3{display: none;}
+}

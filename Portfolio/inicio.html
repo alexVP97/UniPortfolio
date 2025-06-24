@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>VP Portfolio: Inicio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='menu.css'>
+    <script src='funciones.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+</head>
+<body>
+    <div id="mppal">
+        <img src="Logo/logo1.jpg" alt="Logo" id="logo">
+        <h1>Vera Bros <br>
+            Portfolio</h1>
+        <a onclick="sobreNosotros()">Sobre nosotros</a>
+        <a onclick="aparecer('fcontacto')">Contacto</a>
+        <a id="llave" onclick="aparecer('secdesp'); aparecer('cerrar'); trabajos();">Trabajos</a>
+        <img id="cerrar" src="Logo/arrow-24-16.png" onclick="desaparecer('secdesp'); desaparecer('cerrar')" alt="flecha">
+        <p id="secdesp">
+            <a onmouseover="resaltarB('hoja')" onmouseleave="apagar('hoja')">Simulación</a><br>
+            <a onmouseover="resaltarB('teclado')" onmouseleave="apagar('teclado')">Animación</a><br>
+            <a onmouseover="resaltarB('alfombrilla')" onmouseleave="apagar('alfombrilla')">P. Audiovisual</a>
+        </p>
+    </div>
+    <main>
+        <div id="mesa">
+            <h2 id="ANI">Animación</h2>
+            <div id="teclado" class="seccion" onmouseover="resaltarB('teclado'); aparecer('ANI')" onmouseleave="apagar('teclado'); desaparecer('ANI')">
+                <img src="Logo/rocket.gif">
+            </div>
+            <h2 id="SIM">Simulación</h2>
+            <div id="hoja" class="seccion" onmouseover="resaltarB('hoja'); aparecer('SIM')" onmouseleave="apagar('hoja'); desaparecer('SIM')">
+                <h3>Portfolio de SIMULACIÓN</h3>
+                <img src="Logo/canon.gif">
+                <div id="contenedorSim"></div>
+                <script src="canvasSimInicio.js"></script>
+                <div id="escrito">Aquí tenemos un ejemplo de las cosas que hacemos con processing.<br>
+                    <b>¡Haz click dentro del cuadro para crear bolas pintoras de colores!</b><br>
+                    ...o haz click en el folio para ir a la página de la asignatura.
+                </div>
+            </div>
+            <h2 id="PEA">Producción Audiovisual</h2>
+            <div id="alfombrilla" class="seccion" onmouseover="resaltarB('alfombrilla'); aparecer('PEA')" onmouseleave="apagar('alfombrilla'); desaparecer('PEA')">
+                <img src="Logo/camera.gif">
+                <div id="raton">
+                <div id="lvert"></div>
+                <div id="lhorz"></div>
+                </div>
+            </div>
+            <div id="fcontacto">
+                <h2> Contacta con nosotros:</h2>
+             <form>
+                 <label for="nombre"> Nombre: </label> <br/>
+                 <input name="nombre" type="text" id="nombre" placeholder = "Nombre y Apellidos" required> <br/>
+                 <label for="correo"> Email: </label> <br/>
+                 <input name="correo" type="email" id="correo" placeholder="Tu Email" required><br/>
+                 <label for="asunto"> Asunto: </label><br/>
+                 <input name="asunto" type="text" id="asunto" placeholder = "Motivo de Contacto" required> <br/><br/>
+                 <label for="cuerpocorreo"> Descripción:<br>
+                 <textarea name="cuerpocorreo" id="cuerpocorreo" cols="80" rows="25" required> </textarea> <br/>
+                 <label for="archivo"> Adjuntar archivo (opcional): </label>
+                 <input type="file" id="archivo" name="archivo"> <br/><br/>
+                 
+                 <button onclick="desaparecer('fcontacto')">Enviar</button>
+                 <button onclick="desaparecer('fcontacto')">Cancelar</button>
+                 
+             </form>
+            </div>
+            <div id="alex" class="carnet">
+                <div class="celo"> </div>
+                <img src="Logo/a1b.jpg" class="foto"> <img src="Logo/Cap_ETSE_UV_es.png" class="etse">
+                <p>
+                    <span>NOMBRE:</span>  <br>Alejandro Vera Peiró<br>
+                    <span>FECHA DE NACIMIENTO:</span> <br>28/04/1997<br>
+                    <span>DESCRIPCIÓN:</span><br> Sujeto amigable de una altura considerable con aptitudes en el mundo de la fisioterapia y el baloncesto. Después de descubrir que la clínica no era lo suyo
+                    viró para dedicarse a su verdadera vocación: escibir cosas creativas y hacer tonterías.
+                    
+                </p>
+            </div>
+            <div id="pablo" class="carnet">
+                <div class="celo"> </div>
+                <img src="Logo/pab2b.jpg" alt="pablo" class="foto"> <img src="Logo/Cap_ETSE_UV_es.png" class="etse">
+                <p>
+                    <span>NOMBRE:</span> <br>Pablo Vera Peiró<br>
+                    <span>FECHA DE NACIMIENTO:</span> <br>23/11/2001<br>
+                    <span>DESCRIPCIÓN:</span><br> Tras graduarse en el ciclo superior de ingeniería Lego con tan solo 4 años, Pablo empezó a destacar en otros campos como las canchas de baloncesto
+                    o los videojuegos. Especializado en divulgar la palabra del señor (Alexelcapo), goza de gran creatividad a la hora de imaginar y procrastinar.
+                    
+                </p>
+            </div>
+            <div id="msj">
+                <img src="Logo/nube.png">
+                <p id="msjMvl">¡Prueba a visitarnos desde un ordenador (usando pantalla completa) 
+                    para una experiencia totalmente distinta! </p>
+                <p id="msjPC">¡Prueba a reducir bastante el ancho de la ventana 
+                    (1/3 del total más o menos) para una experiencia totalmente distinta! 
+                </p>
+            </div>
+            <div id="pie">
+                Copyright: Todos los derechos reservados. 
+                Alejandro y Pablo Vera Peiró. 2022.
+            <div>
+        </div>
+    </main>
+</body>
+</html>

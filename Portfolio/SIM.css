@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "ArchitectsDaughter";
+    src: url("fuentes/architects-daughter/ArchitectsDaughter.ttf");
+    font-style: normal;
+}
+body{
+    font-family: "ArchitectsDaughter";
+    background-image: url('Logo/folio.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-position: 0% 15%;
+    color: rgb(27, 27, 178);
+    text-align: center;
+    font-size: 14pt;
+}
+main{
+    padding-left: 14%; /*La cuadrícula se divide en 22 líneas, (100/22)*3 = 14% */
+}
+
+div.cuadro{
+    border: 3px solid grey;
+    width: 30%;
+    height: fit-content;
+    margin-right: 3%;
+    overflow: clip;
+    background-color: rgba(128, 128, 128, 0.572);
+    text-align: center;
+    color: black;
+    font-size: 18pt;
+}
+
+div.cuadro img{
+    margin: 3%;
+    width: 90%;
+    margin-right: 3%;
+}
+
+div#menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h1{ color: rgb(184, 16, 38); font-size: 30pt; text-align: center;}
+h2{color: black; font-size: 20pt;}
